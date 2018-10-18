@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+// import { Route, Switch } from 'react-router-dom'
+import Songs from './Songs/songs'
 
 class App extends Component {
 	render() {
@@ -16,9 +18,11 @@ class App extends Component {
 				<hr />
 				<hr />
 				<hr />
+				<Songs />
 			</div>
 		);
 	}
 }
 
-export default App;
+
+export default App
