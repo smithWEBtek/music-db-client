@@ -5,8 +5,8 @@ import SongService from '../services/SongService'
 export const fetchSongsStart = () => {
 	return { type: actionTypes.FETCH_SONGS_START }
 }
-export const fetchSongsSuccess = (students) => {
-	return { type: actionTypes.FETCH_SONGS_SUCCESS, studentsList: students }
+export const fetchSongsSuccess = (songs) => {
+	return { type: actionTypes.FETCH_SONGS_SUCCESS, songsList: songs }
 }
 export const fetchSongsFail = (error) => {
 	return { type: actionTypes.FETCH_SONGS_FAIL, error: error }
@@ -16,8 +16,7 @@ export const fetchSongs = () => {
 		dispatch(fetchSongsStart())
 		SongService.fetchSongs()
 			.then(response => {
-
-				dispatch({ type: actionTypes.FETCH_SONGS, studentsList: response })
+				dispatch({ type: actionTypes.FETCH_SONGS, songsList: response })
 				dispatch(fetchSongsSuccess())
 			})
 			.catch(error => {

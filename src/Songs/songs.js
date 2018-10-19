@@ -3,13 +3,14 @@ import { connect } from 'react-redux'
 import * as actions from '../store/actions/songActions'
 
 class Songs extends Component {
-	state = {
-		title: 'My Song',
-		genre: 'Funk'
+
+	componentDidMount() {
+		this.props.onFetchSongs()
 	}
 
 	render() {
-		const songsList = this.props.songs.songs.map((s, i) => {
+
+		const songsList = this.props.songs.map((s, i) => {
 			return (
 				<div key={i}>
 					<p>{s.title}</p>
@@ -28,7 +29,7 @@ class Songs extends Component {
 
 const mapStateToProps = state => {
 	return {
-		songs: state.sng
+		songs: state.sng.songs
 	}
 }
 
