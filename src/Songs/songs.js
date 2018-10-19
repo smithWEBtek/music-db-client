@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import * as actions from '../store/actions/songActions'
+import { connect } from 'react-redux';
+import * as actions from '../store/actions/songActions';
+import Song from './Song/Song';
 
 class Songs extends Component {
 
@@ -12,15 +13,15 @@ class Songs extends Component {
 
 		const songsList = this.props.songs.map((s, i) => {
 			return (
-				<div key={i}>
-					<p>{s.title}</p>
-				</div>
+				<Song
+					key={i}
+					song={s}
+				/>
 			)
 		})
 
 		return (
 			<div>
-				<p>this is the Songs component</p>
 				{songsList}
 			</div>
 		)

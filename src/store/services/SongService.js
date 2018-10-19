@@ -1,6 +1,5 @@
 // const API_URL = process.env.REACT_APP_API_URL || "https://music-db-api.herokuapp.com/api"
 const API_URL = "https://music-db-api.herokuapp.com/api"
-// const API_URL = "http://127.0.0.1:3002/api/songs"
 // const API_URL = "http://localhost:3002/api"
 
 const SongService = {

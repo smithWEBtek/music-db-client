@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 // import { Route, Switch } from 'react-router-dom'
-import Songs from './Songs/songs'
+import Songs from './Songs/Songs'
 
 class App extends Component {
 	render() {
