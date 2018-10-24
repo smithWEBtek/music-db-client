@@ -1,10 +1,10 @@
 import React from 'react';
-import './collection.css';
+import './collections.css';
 
 const Collection = (props) => {
 	return (
-		<div className="CollectionCard">
-			<h3>{props.collection.name}</h3>
+		<div className="CollectionRow">
+			{props.collection.name}
 		</div>
 	)
 }

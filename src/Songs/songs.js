@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../store/actions/songActions';
-import Song from './song/song';
+import Song from './song';
+import './songs.css'
 
 class Songs extends Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../store/actions/collectionActions';
-import Collection from './collection/collection';
+import Collection from './collection';
 
 class Collections extends Component {
 
