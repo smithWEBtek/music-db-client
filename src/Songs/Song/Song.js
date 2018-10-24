@@ -1,5 +1,5 @@
 import React from 'react';
-import './Song.css';
+import './song.css';
 
 const Song = (props) => {
 	return (

@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
+import './app.css';
 // import { Route, Switch } from 'react-router-dom'
-import Songs from './Songs/Songs'
+import Songs from './songs/songs'
+import Collections from './collections/collections'
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<hr />
-				<hr />
-				<hr />
-				<hr />
-				<hr />
+			<div className="Body">
 				<h1>Music DB</h1>
-				<hr />
-				<hr />
-				<hr />
-				<hr />
-				<hr />
+				<Collections />
 				<Songs />
 			</div>
 		);
 	}
 }
-
 
 export default App

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../store/actions/songActions';
-import Song from './Song/Song';
+import Song from './song/song';
 
 class Songs extends Component {
 
@@ -11,11 +11,11 @@ class Songs extends Component {
 
 	render() {
 
-		const songsList = this.props.songs.map((s, i) => {
+		const songsList = this.props.songs.map((song, index) => {
 			return (
 				<Song
-					key={i}
-					song={s}
+					key={index}
+					song={song}
 				/>
 			)
 		})

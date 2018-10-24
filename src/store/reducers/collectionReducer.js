@@ -1,10 +1,11 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-	songs: [
-		{ title: 'Bittersweet Blues', genre: 'Swing' },
-		{ title: 'Isfahan', genre: 'Jazz' },
-		{ title: 'Antillanna', genre: 'Salsa' }
+	collections: [
+		{ name: 'Howie Rubenstein gig' },
+		{ name: 'Cornell Coley gig' },
+		{ name: 'Vibra Tropicale gig' },
+		{ name: 'Mark Greel gig' },
 	],
 	error: false,
 	loading: false,
@@ -13,25 +14,25 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
 	switch (action.type) {
-		// --FETCH SONGS------------------------------------
+		// --FETCH COLLECTIONS------------------------------------
 
-		case actionTypes.FETCH_SONGS_START:
+		case actionTypes.FETCH_COLLECTIONS_START:
 			return Object.assign({}, state, { loading: true })
 
-		case actionTypes.FETCH_SONGS_SUCCESS:
+		case actionTypes.FETCH_COLLECTIONS_SUCCESS:
 			return Object.assign({}, state, { loading: false })
 
-		case actionTypes.FETCH_SONGS_FAIL:
+		case actionTypes.FETCH_COLLECTIONS_FAIL:
 			return Object.assign({}, state, {
 				error: action.error,
 				loading: false,
 				message: action.type
 			})
 
-		case actionTypes.FETCH_SONGS:
-			const songs = action.songsList
+		case actionTypes.FETCH_COLLECTIONS:
+			const collections = action.collectionsList
 			return Object.assign({}, state, {
-				songs: songs
+				collections: collections
 			})
 		//----- DEFAULT --------------------------------
 		default:
