@@ -8,12 +8,13 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Music DB</h1>
+				<h2>Music DB</h2>
 				<hr />
-				<hr />
+				<h4>Collections</h4>
 				<Collections />
 				<hr />
 				<hr />
+				<h4>Songs</h4>
 				<Songs />
 			</div>
 		);
