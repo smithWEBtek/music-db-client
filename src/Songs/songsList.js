@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SongList = (props) => {
+const SongsList = (props) => {
 
 	const list = props.songs.map((song, index) => {
 		return (
@@ -17,4 +17,4 @@ const SongList = (props) => {
 	)
 }
 
-export default SongList; 
+export default SongsList; 

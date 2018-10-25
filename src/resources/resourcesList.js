@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResourceList = (props) => {
+const ResourcesList = (props) => {
 
 	const list = props.resources.map((resource, index) => {
 		return (
@@ -17,4 +17,4 @@ const ResourceList = (props) => {
 	)
 }
 
-export default ResourceList; 
+export default ResourcesList; 

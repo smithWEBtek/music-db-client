@@ -7,3 +7,6 @@ export {
 export {
 	fetchResources
 } from './resourceActions'
+export {
+	fetchCategories
+} from './categoryActions'

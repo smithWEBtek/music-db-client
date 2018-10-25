@@ -4,6 +4,7 @@ import './app.css';
 import Songs from './songs/songs'
 import Collections from './collections/collections'
 import Resources from './resources/resources'
+import Categories from './categories/categories'
 
 class App extends Component {
 	render() {
@@ -13,6 +14,7 @@ class App extends Component {
 				<hr />
 				<Collections />
 				<Songs />
+				<Categories />
 				<Resources />
 			</div>
 		);
