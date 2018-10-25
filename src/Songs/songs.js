@@ -23,6 +23,7 @@ class Songs extends Component {
 
 		return (
 			<div>
+				<h4>Songs</h4>
 				{songsList}
 			</div>
 		)

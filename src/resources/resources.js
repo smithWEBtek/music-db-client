@@ -23,6 +23,7 @@ class Resources extends Component {
 
 		return (
 			<div>
+				<h4>Resources</h4>
 				{resourcesList}
 			</div>
 		)
@@ -31,7 +32,7 @@ class Resources extends Component {
 
 const mapStateToProps = state => {
 	return {
-		resources: state.sng.resources
+		resources: state.res.resources
 	}
 }
 

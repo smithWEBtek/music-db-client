@@ -3,6 +3,7 @@ import './app.css';
 // import { Route, Switch } from 'react-router-dom'
 import Songs from './songs/songs'
 import Collections from './collections/collections'
+import Resources from './resources/resources'
 
 class App extends Component {
 	render() {
@@ -10,12 +11,9 @@ class App extends Component {
 			<div>
 				<h2>Music DB</h2>
 				<hr />
-				<h4>Collections</h4>
 				<Collections />
-				<hr />
-				<hr />
-				<h4>Songs</h4>
 				<Songs />
+				<Resources />
 			</div>
 		);
 	}

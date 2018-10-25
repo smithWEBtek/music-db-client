@@ -22,6 +22,7 @@ class Collections extends Component {
 
 		return (
 			<div>
+				<h4>Collections</h4>
 				{collectionsList}
 			</div>
 		)

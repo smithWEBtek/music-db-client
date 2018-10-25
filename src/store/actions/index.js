@@ -4,3 +4,6 @@ export {
 export {
 	fetchCollections
 } from './collectionActions'
+export {
+	fetchResources
+} from './resourceActions'

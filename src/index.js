@@ -15,10 +15,12 @@ import thunk from 'redux-thunk'
 
 import SongReducer from './store/reducers/songReducer'
 import CollectionReducer from './store/reducers/collectionReducer'
+import ResourceReducer from './store/reducers/resourceReducer'
 
 const rootReducer = combineReducers({
 	sng: SongReducer,
-	col: CollectionReducer
+	col: CollectionReducer,
+	res: ResourceReducer
 })
 
 const logger = store => {
